@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "model.proto";
+
+package svc;
+
+service StatusService {
+    rpc GetStatues (Request) returns (Response);
+}
+
+message Request {
+    repeated model.Status statuses = 1;
+}
+
+message Response {
+    repeated model.Status actualStatuses = 1;   
+}

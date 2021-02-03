@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package model;
+
+enum Status {
+    A = 0;
+    B = 1;
+    C = 2;
+}
